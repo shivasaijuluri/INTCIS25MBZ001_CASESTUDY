@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Item List</title>
+        <link rel="stylesheet" type="text/css" href="css/HeaderandFooter.css">
+        <link rel="stylesheet" type="text/css" href="css/edit-menu.css">
+        <script src="js/menu-item-list-customer.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="heading-logo">
+                    <a id="heading" href="index.html">truYum</a>
+                    <img src="images/logo.png" alt="logo" id="logo" hieght="25" width="55">
+                </div>
+                <a href="menu-item-list-admin.html"><p class="menu-heading">Menu</p></a>
+            </nav>
+        </header>
+
+        <div id="edit-menu-item">
+            <form >
+                <h1>Edit Menu Item</h1>
+                <div class="form-group">
+                    <label for = "name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group" >
+                    <div  class="item-group">
+                        <label for = "price">Price</label>
+                        <input type="number" id="price" name="price" min="1" required>
+                    </div>
+                    <div class="item-group">
+                        <p>Active</p>
+                        <input type="radio" id="active-yes" name="Active" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="active-no" name="Active" value="No">
+                        <label for="No">No</label><br>
+                    </div>
+                    <div class="item-group">
+                        <label for = "DateOfLaunch">Date of Launch</label>
+                        <input type="date" id="DateOfLaunch" name="DateOfLaunch" required>
+                    </div>
+                    <div class="item-group">
+                        <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="Main Course">Main Course</option>
+                        <option value="Starters">Starters</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Drinks">Drinks</option>
+
+                    </select>                   
+                 </div>
+                </div>
+                 <div>
+                    <input type="checkbox" id="free-delivery" name="free-delivery" value="Yes">
+                    <label for="free-delivery">Free Delivery</label>
+                 </div>
+                 <div>
+                <input type="submit" value="Save">   
+                </div>
+
+                
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2019</p>
+        </footer>
+
+    </body>
+</html>
