@@ -27,11 +27,13 @@
 .item-group{
     display: flex;
     flex-direction: column;
+
 }
 
 .radio-group{
     display: flex;
     flex-direction: row;
+    gap:10px;
 }
 
 #submit-button{
