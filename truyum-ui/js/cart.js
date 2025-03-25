@@ -41,18 +41,26 @@ function createCart() {
 createCart();
 
 document.querySelectorAll(".delete").forEach(function(element, index) {
-    element.addEventListener("click", function() {
-
+    element.addEventListener("click", function(event) {
+        event.preventDefault(); 
         if (sessionStorage.getItem("cart") === null) { 
-            window.location.href="cart-empty.html";
+            return;
         }
-        else{
-            window.location.href="cart-notification.html";
+        
+        let cart = JSON.parse(sessionStorage.cart);
+
+        if(cart.length ===1){
+             cart.splice(index, 1);
+             sessionStorage.setItem("cart", JSON.stringify(cart));
+            window.location.href = "cart-empty.html";
+            return;
         }
 
-        cart = JSON.parse(sessionStorage.cart);
+        
         cart.splice(index, 1);
-
         sessionStorage.setItem("cart", JSON.stringify(cart));
+        window.location.href = "cart-notification.html";
+        
+        
     });
 });
