@@ -14,7 +14,7 @@ function createMenuItmesCustomerTable() {
         freeDelivery.innerHTML = items[i].freeDelivery ? "Yes" : "No";
 
         var price = document.createElement("td");
-        price.innerHTML = items[i].price;
+        price.innerHTML = `Rs. ${items[i].price}`;
 
         var category = document.createElement("td");
         category.innerHTML = items[i].category;

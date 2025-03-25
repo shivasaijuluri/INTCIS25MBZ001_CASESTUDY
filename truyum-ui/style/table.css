@@ -27,7 +27,16 @@ td{
 }
 #table-heading2{
     color:green;
-    text-align: center;
+    white-space: nowrap;
     font-weight: bold;
     font-size: 22px;
+}
+
+.item-price{
+    text-align: right;
+}
+
+#table-body {
+    max-height: 75vh;
+    overflow-y: auto; 
 }

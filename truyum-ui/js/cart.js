@@ -16,7 +16,7 @@ function createCart() {
         freeDelivery.innerHTML = cart[i].freeDelivery ? "Yes" : "No";
 
         var price = document.createElement("td");
-        price.innerHTML = cart[i].price;
+        price.innerHTML = `Rs. ${cart[i].price}`;
         total += Number(cart[i].price);
 
         var del = document.createElement("a");

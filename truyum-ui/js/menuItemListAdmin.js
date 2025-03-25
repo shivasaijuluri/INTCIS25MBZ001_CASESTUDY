@@ -11,7 +11,8 @@ function createMenuItmesAdminTable() {
         name.innerHTML = items[i].name;
 
         var price = document.createElement("td");
-        price.innerHTML = items[i].price;
+        price.innerHTML = `Rs. ${items[i].price}`;
+        price.classList.add("item-price");
 
         var active = document.createElement("td");
         active.innerHTML = items[i].active ? "Yes" : "No";
