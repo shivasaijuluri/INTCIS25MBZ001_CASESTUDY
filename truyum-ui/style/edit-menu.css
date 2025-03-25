@@ -1,44 +1,88 @@
-#edit-menu-item{
-    /* margin-left: 25%; */
-    margin-top: 5%;
-    height: 200px;
+#edit-menu-item-body{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+.form-group-name{
+    margin-bottom: 30px;
+}
+
+.form-group-name input{
+    width: 100%; 
+    padding: 8px;
+    border: 3px solid #383838;    
+}
+
+.title-label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group-line{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
+    flex: 1; 
+    min-width: 200px; 
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%; 
+    padding: 8px;
+    border: 3px solid #383838;
+}
+.form-group-radio label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.radio-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.checkbox-group {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin: 0;
+    font-weight: bold;
+}
+
+.button-group {
+    width: 100%;
+    margin-top: 20px;
     text-align: left;
 }
 
-#edit-menu-item div{
-    /* padding: 10px; */
-    margin: 10px;
-}
-.form-group-main{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20;
-}
-.form-group{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-.item-group{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.radio-group{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
-
-#submit-button{
-    height: 50px;
-    width: 100px;
-    background-color: blue;
-
+button {
+    background-color: rgb(48, 84, 150);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    font-size: 16px;
 }
