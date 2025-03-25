@@ -1,0 +1,16 @@
+
+.button{
+    background-color: rgb(48, 84, 150);
+    height: 70px;
+    width: 200px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
+}

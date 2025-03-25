@@ -1,0 +1,11 @@
+.edit-menu-item-heading{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.edit-menu-item-text{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    color:green;
+}

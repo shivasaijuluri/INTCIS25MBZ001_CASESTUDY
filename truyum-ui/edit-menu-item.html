@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Menu Item List</title>
-        <link rel="stylesheet" type="text/css" href="css/HeaderandFooter.css">
-        <link rel="stylesheet" type="text/css" href="css/edit-menu.css">
-        <script src="js/menu-item-list-customer.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div id="heading-logo">
-                    <a id="heading" href="index.html">truYum</a>
-                    <img src="images/logo.png" alt="logo" id="logo" hieght="25" width="55">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/HeaderandFooter.css">
+    <link rel="stylesheet" href="styles/edit-menu.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-title">
+                <a href="index.html" class="navtitle">truYum</a>
+                <img class="logo" src="images/logo.png" alt="img" >
+            </div>
+            <div class="nav-links">
+                <a href="menu-item-list-customer.html">Menu</a>
+            </div>
+        </nav>
+    </header>
+    <div id="edit-menu-item-body">
+        <form onsubmit="editMenuItem()" action="edit-menu-item-status.html" id="edit-menu-form">
+            <h1 class="edit-menu-item-heading">Edit Menu Item</h1>
+            <div class="edit-menu-item-form">
+                <div class="form-group-name">
+                    <label for="title" id="title-label">Name:</label>
+                    <input type="text" id="title" name="title" >
                 </div>
-                <a href="menu-item-list-admin.html"><p class="menu-heading">Menu</p></a>
-            </nav>
-        </header>
-
-        <div id="edit-menu-item">
-            <form >
-                <h1>Edit Menu Item</h1>
-                <div class="form-group-main">
-                    <label for = "name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group" >
-                    <div  class="item-group">
-                        <label for = "price">Price</label>
+        
+               <div class="form-group-line">
+                    <div class="form-group">
+                        <label for="price">Price (Rs.):</label>
                         <input type="number" id="price" name="price" min="1" required>
                     </div>
-                    <div class="item-group">
-                        <p>Active</p>
+                    <div class="form-group-radio">
+                        <label for="inStock">Active:</label>
                         <div class="radio-group">
-                        <input type="radio" id="active-yes" name="Active" value="Yes">
-                        <label for="Yes">Yes</label><br>
-                        <input type="radio" id="active-no" name="Active" value="No">
-                        <label for="No">No</label><br>
+                            <input type="radio" id="inStockYes" name="inStock" value="yes">
+                            <label for="inStockYes">Yes</label>       
+                            <input type="radio" id="inStockNo" name="inStock" value="no">
+                            <label for="inStockNo">No</label>
                         </div>
                     </div>
-                    <div class="item-group">
-                        <label for = "DateOfLaunch">Date of Launch</label>
-                        <input type="date" id="DateOfLaunch" name="DateOfLaunch" required>
+                    <div class="form-group">
+                        <label for="dateOfLaunch">Date of Launch:</label>
+                        <input type="date" id="dateOfLaunch" name="dateOfLaunch" required>
                     </div>
-                    <div class="item-group">
-                        <label for="category">Category</label>
-                    <select name="category" id="category">
-                        <option value="Main Course">Main Course</option>
-                        <option value="Starters">Starters</option>
-                        <option value="Dessert">Dessert</option>
-                        <option value="Drinks">Drinks</option>
-
-                    </select>                   
-                 </div>
-                </div>
-                 <div>
-                    <input type="checkbox" id="free-delivery" name="free-delivery" value="Yes">
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="starters">Starters</option>
+                            <option value="main-course" selected>Main Course</option>
+                            <option value="dessert">Dessert</option>
+                            <option value="drinks">Drinks</option>
+                        </select>
+                    </div>
+               </div>
+        
+                <div class="checkbox-group">
+                    <input type="checkbox" id="free-delivery" name="free-delivery" value="">
                     <label for="free-delivery">Free Delivery</label>
-                 </div>
-                 <div>
-                <input type="submit" id="submit-button" value="Save">   
                 </div>
-
-                
-        </div>
-
-        <footer>
-            <p>Copyright &copy; 2019</p>
-        </footer>
-
-    </body>
+        
+                <div class="button-group">
+                    <button type="submit" >Save</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <footer class="footer">Copyright &#169; 2025</footer>
+    <script src="js/editMenuItem.js"></script>
+</body>
 </html>

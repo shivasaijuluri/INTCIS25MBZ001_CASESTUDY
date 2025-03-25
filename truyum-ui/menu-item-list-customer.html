@@ -1,63 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Menu Item List</title>
-        <link rel="stylesheet" type="text/css" href="css/HeaderandFooter.css">
-        <link rel="stylesheet" type="text/css" href="css/table.css">
-        <script src="js/menu-item-list-customer.js"></script>
-    </head>
-    <body>
-
-        <header>
-            <nav>
-                <div id="heading-logo">
-                    <a id="heading" href="index.html">truYum</a>
-                    <img src="images/logo.png" alt="logo" id="logo" hieght="25" width="55">
-                </div>
-                <a href="menu-item-list-admin.html"><p class="menu-heading">Menu</p></a>
-            </nav>
-        </header>
-
-        <div id="menu-items">
-            <table class="table">
-                <caption id="table-heading">Menu Items</caption>
-                <thead class="table-subheading">
-                    <td class="item-name">Name</td>
-                    <td>Free Delivery</td>
-                    <td class="item-price">Price</td>
-                    <td>Category</td>
-                    <td>Action</td>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="item-name">Sandwich</td>
-                        <td>Yes</td>
-                        <td class="item-price">Rs. 99.00</td>
-                        <td>Main Course</td>
-                        <td><a href="">Add to Cart</a></td>
-                    </tr>
-                    <tr>
-                        <td class="item-name">Burger</td>
-                        <td>No</td>
-                        <td class="item-price">Rs. 129.00</td>
-                        <td>Main Course</td>
-                        <td><a href="">Add to Cart</a></td>
-                    </tr>
-                    <tr>
-                        <td class="item-name">Pizza</td>
-                        <td>No</td>
-                        <td class="item-price">Rs. 149.00</td>
-                        <td>Main Course</td>
-                        <td><a href="">Add to Cart</a></td>
-                    </tr>
-                </tbody>   
-            </table>
-        </div>
-
-
-        <footer>
-            <p>Copyright &copy; 2019</p>
-        </footer>
-
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/HeaderandFooter.css"></link>
+    <link rel="stylesheet" href="style/table.css"></link>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-title">
+                <a href="index.html" class="navtitle">truYum</a>
+                <img class="logo" src="images/logo.png" alt="img" >
+            </div>
+            <div class="nav-links">
+                <a href="menu-item-list-customer.html">Menu</a>
+                <a href="#" onclick="cartFlow()">Cart</a>
+            </div>
+        </nav>
+    </header>
+    <div id="table-body">
+        <table class="table">
+            <caption id="table-heading">Menu Items</caption>
+            <thead class="table-subheading">
+                <td>Name</td>
+                <td>Free Delivery</td>
+                <td>Price</td>
+                <td>Category</td>
+                <td>Action</td>
+            </thead>
+            <tbody id="table-items-body"></tbody>
+        </table>    
+    </div>
+    <footer class="footer">Copyright &#169; 2025</footer>
+    <script src="js/menuItems.js"></script>
+    <script src="js/menuItemListCustomer.js"></script>
+    <script src="js/cartFlow.js"></script>
+</body>
 </html>
